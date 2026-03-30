@@ -22,9 +22,6 @@
 #   Den har O(n²) (kvadratisk tid).
 #------------------------------------------------------------------------------
 
-
-import random
-
 import pytest
 
 from src.insertion.insertion_sort import insertion_sort

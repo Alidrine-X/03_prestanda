@@ -17,7 +17,7 @@ import random
 from src.insertion import insertion_sort
 
 
-@pytest.mark.performance
+@pytest.mark.insertion
 def test_insertion_sort_benchmark__random(benchmark):
     """Testar en lång lista sorterad slumpmässigt"""
     test_list = generate_list_random(2700)
@@ -29,7 +29,7 @@ def generate_list_random(size):
 
 #------------------------------------------------------------------------------
 
-@pytest.mark.performance
+@pytest.mark.insertion
 def test_insertion_sort_benchmark__ascending(benchmark):
     """Testar en lång lista sorterad stigande"""
     test_list = generate_list_ascending(2700)
@@ -42,7 +42,7 @@ def generate_list_ascending(size):
 
 #------------------------------------------------------------------------------
 
-@pytest.mark.performance
+@pytest.mark.insertion
 def test_insertion_sort_benchmark__descending(benchmark):
     """Testar en lång lista sorterad fallande"""
     test_list = generate_list_descending(2700)
